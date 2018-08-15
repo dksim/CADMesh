@@ -38,7 +38,7 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
 endif()
 
 # Tetgen
-option(WITH_SYS_TETGEN "WITH_SYS_TETGEN" OFF)
+option(WITH_SYS_TETGEN "WITH_SYS_TETGEN" ON)
 if(${WITH_SYS_TETGEN} MATCHES "ON")
     find_package(tetgen)
 else()
@@ -52,7 +52,7 @@ else()
 endif()
 
 # Open Asset Importer Library
-option(WITH_SYS_ASSIMP "WITH_SYS_ASSIMP" OFF)
+option(WITH_SYS_ASSIMP "WITH_SYS_ASSIMP" ON)
 if(${WITH_SYS_ASSIMP} MATCHES "ON")
     find_package(assimp)
 else()
